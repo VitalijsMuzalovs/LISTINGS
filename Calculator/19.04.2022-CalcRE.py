@@ -21,25 +21,32 @@ def pressClear():
 def calculate(sign):
     global mathOp
     global num1
-    mathOp = sign
-    num1 = int(e.get())
-    e.delete(0,END)
+    try:
+        mathOp = sign
+        num1 = int(e.get())
+        e.delete(0,END)
+    except ValueError:
+        e.insert(0,'Not number!')
     return 0
     
 def pressEqual():
-    num2 = int(e.get())
-    if mathOp=="+":
-        rez = num1+num2
-    elif mathOp=="-":
-        rez = num1-num2
-    elif mathOp=="/":
-        rez = num1/num2
-    elif mathOp=="*":
-        rez = num1*num2
-    else:
-        rez=0
-    e.delete(0,END)
-    e.insert(0,str(rez))
+    try:
+        num2 = int(e.get())
+        if mathOp=="+":
+            rez = num1+num2
+        elif mathOp=="-":
+            rez = num1-num2
+        elif mathOp=="/":
+            rez = num1/num2
+        elif mathOp=="*":
+            rez = num1*num2
+        else:
+            rez=0
+        e.delete(0,END)
+        e.insert(0,str(rez))
+    except:
+        e.delete(0,END)
+        e.insert('ERROR!')
     return 0
 
 
@@ -54,10 +61,11 @@ for i in range(10):
 btEq=Button(mansLogs,text="=",padx=btX,pady=pdY,command=lambda:pressEqual())
 btClear=Button(mansLogs,text="C",padx=btX,pady=pdY,command=lambda:pressClear())
 
-myPlus=Button(mansLogs,text="+",padx=btX,pady=pdY,command=lambda:calculate("+"))
-myMinus=Button(mansLogs,text="-",padx=btX,pady=pdY,command=lambda:calculate("-"))
-myMult=Button(mansLogs,text="*",padx=btX,pady=pdY,command=lambda:calculate("*"))
-myDevide=Button(mansLogs,text="/",padx=btX,pady=pdY,command=lambda:calculate("/"))
+myDict={"myPlus":'+',"myMinus":"-","myMult":"*","myDevide":"/"}
+
+for myKey,v in myDict.items():
+    myExpr = myKey+"=Button(mansLogs,text='"+v+"',padx=btX,pady=pdY,command=lambda:calculate('"+v+"'))"
+    exec(myExpr)
 
 e.grid(row=1,column=1,columnspan=5)
 
