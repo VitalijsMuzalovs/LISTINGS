@@ -1,0 +1,16 @@
+body{
+    background-color: blueviolet;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:rgb(255, 255, 255);
+}
+
+img{
+    border: 2px dashed red;
+    border-radius: 50% ;
+}
+
+div{
+    background-color: azure;
+}
