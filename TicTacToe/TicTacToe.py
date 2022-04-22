@@ -63,6 +63,7 @@ def winCase():
 for i in range(0,10):
     myExpr = "cell"+str(i)+"=Button(win,width=pdX,height=pdY,text='',font=('Helvetica',24),command=lambda:btClick(cell"+str(i)+"))"
     exec(myExpr)
+    # exec("print(cell"+str(i)+")")
 
 m=0
 for i in range(0,3):
