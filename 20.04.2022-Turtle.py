@@ -1,9 +1,10 @@
 from turtle import *
-s = getscreen()
-t = Turtle()
-t.shape("turtle")
-t.color("blue")
-right(1500)
+color('red', 'yellow')
+begin_fill()
+while True:
+    forward(200)
+    left(170)
+    if abs(pos()) < 1:
+        break
+end_fill()
 done()
-
-# turtle.exitonclick()
