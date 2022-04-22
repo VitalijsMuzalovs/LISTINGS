@@ -49,9 +49,6 @@ def pressEqual():
         e.insert('ERROR!')
     return 0
 
-
-# Make it with FOR
-
 e = Entry(mansLogs,width=15,font=("Arial Black",22) )
 
 for i in range(10):
