@@ -37,8 +37,6 @@ def fwClick(img_num):
     back.grid(row=1,column=0)
     forward.grid(row=1,column=2)
     
-
-
 def bkClick(img_num):
     global vieta
     global back,forward  
