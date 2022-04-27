@@ -44,7 +44,6 @@ def bkClick(img_num):
     forward=Button(win,text=">>",command=lambda:fwClick(img_num+1))
     back=Button(win,text="<<",command=lambda:bkClick(img_num-1))
     if img_num==1:back=Button(win,text="<<",state=DISABLED)
-    print(img_num)
     vieta.grid_forget()
     vieta=Label(image=imgList[img_num-1])
     
