@@ -1,6 +1,7 @@
 from importlib.machinery import WindowsRegistryFinder
 from msilib.schema import Class
 from tkinter import*
+from tkinter import ttk
 from tkinter import messagebox
 
 
@@ -16,12 +17,17 @@ class Field:
         self.win.title("TicTacToe")
         self.pdX = "6"
         self.pdY="3"
+
+        self.cell={}
+        for i in range(9):
+            self.cell[i]=ttk.Button(self.win,text='',command=lambda:self.btClick(self.cell[i]))
+
         # for i in range(0,10):
         #     myExpr = "self.cell"+str(i)+"=Button(self.win,width=self.pdX,height=self.pdY,text='',font=('Helvetica',24),command=lambda:self.btClick(self.cell"+str(i)+"))"
         #     exec(myExpr)
         
         # print(str(self.cell0.__dir__))
-
+        """
         self.cell0=Button(self.win,width=self.pdX,height=self.pdY,text='',font=('Helvetica',24),command=lambda:self.btClick(self.cell0))
         self.cell1=Button(self.win,width=self.pdX,height=self.pdY,text='',font=('Helvetica',24),command=lambda:self.btClick(self.cell1))
         self.cell2=Button(self.win,width=self.pdX,height=self.pdY,text='',font=('Helvetica',24),command=lambda:self.btClick(self.cell2))
@@ -32,7 +38,7 @@ class Field:
         self.cell7=Button(self.win,width=self.pdX,height=self.pdY,text='',font=('Helvetica',24),command=lambda:self.btClick(self.cell7))
         self.cell8=Button(self.win,width=self.pdX,height=self.pdY,text='',font=('Helvetica',24),command=lambda:self.btClick(self.cell8))
         # print(a)
-
+        """
         m=0
         for i in range(0,3):
             for j in range(0,3):
