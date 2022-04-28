@@ -19,6 +19,7 @@ class Field:
         self.pdY="3"
 
         self.cell={}
+
         for i in range(9):
             self.cell[i]=ttk.Button(self.win,text='',command=lambda:self.btClick(self.cell[i]))
 
@@ -42,8 +43,9 @@ class Field:
         m=0
         for i in range(0,3):
             for j in range(0,3):
-                myExpr2="self.cell"+str(m)+".grid(row="+str(i)+",column="+str(j)+")"
-                exec(myExpr2)
+                # myExpr2="self.cell"+str(m)+".grid(row="+str(i)+",column="+str(j)+")"
+                self.cell[m].grid(row=i,column=j)
+                # exec(myExpr2)
                 m+=1
         # self.cell0.grid(row=0,column=0)
         self.win.mainloop()
