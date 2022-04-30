@@ -107,7 +107,7 @@ print(str1.strip("d")) # lstrip/rstrip
 import requests
 
 f=r"https://www.grobinasskola.lv"
-data=requests.get(f) # response server ->> 200 -> ok
+data=requests.get(f) # response server ->> if 200 then -> ok
 data=data.text
 print(data) """
 
