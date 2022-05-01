@@ -11,8 +11,8 @@ myResponse = requests.get(myURL).text
 soup = BeautifulSoup(myResponse,'lxml')
 items = soup.find_all('li',class_='col col--xs-4 product js-product js-touch-hover')
 
-pages = soup.find_all('div',class_='group group--tiny group--rounded')
-pageLinksStr=str(pages[0].find_all('option')).split(',')
+pages = soup.find('div',class_='group group--tiny group--rounded')
+pageLinksStr=str(pages.find_all('option')).split(',')
 pageLinks=[]
 
 for item in pageLinksStr:
@@ -22,7 +22,7 @@ for item in pageLinksStr:
     pageLinks.append(myLink)
 
 i=0
-writeToFile=''
+writeToFile,outputToFile='',''
 
 for link in pageLinks:
     response = requests.get(link).text
@@ -35,7 +35,7 @@ for link in pageLinks:
         itemBrand=(list(itemTitle.split('\n'))[1]).strip()
         itemPrice=k.find('p',class_='price').text.strip()
         outputString=str(f'{i}.{itemBrand} - {itemName}: {itemPrice}')
-        outputToFile=writeToFile+str(f'{i}.{itemBrand} - {itemName}: {itemPrice}\n')
+        outputToFile=outputToFile+outputString+'\n'
         print(outputString)
             
     with open(fr'E:\TEHNIKUMS\Python\29.04.2022-lekcija\RDveikals-Fridges\Fridges.txt', 'w') as f:
