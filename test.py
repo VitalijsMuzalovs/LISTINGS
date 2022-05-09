@@ -1,12 +1,13 @@
-def mfn(x):
-    return x
+item_set={}
 
-a=[1,2,3,4,5,6,7]
-b=[7,6,5,4,3,2,1,0]
-C=zip(a,b)
-# print(list(C))
+with open(r'H:\PYTHON\LISTINGS\29.04.2022-lekcija\RDveikals-Fridges\Fridges.txt','r') as file:
+    for line in file:
+        line=line.split(' ')
+        lst=[el for el in line if el]
+        item_set[lst[2][:-1]]={'Brand':lst[1],'Price':lst[3]}
+file.close
 
-print(type(C))
+# for k,v in item_set.items():
+#     print(k,v)
 
-result = map(lambda x, y: x+y, a,b)
-print(set(result))
+# print(item_set['RDB424E1AX']['Price'])
