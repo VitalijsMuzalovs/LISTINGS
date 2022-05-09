@@ -1,6 +1,8 @@
 import re
 import gara_atbilde as gara
 
+priceListExtracted=False
+
 def zinjojuma_varbutiba(lieto_zinja,atpazitie_vardi,vienk_atbilde=False,prasitie_vardi=[]):
     zinojuma_noteiktiba=0
     ir_nepieciesami_vardi=False
@@ -26,9 +28,13 @@ def extract_prices():
             line=line.split(' ')
             lst=[el for el in line if el]
             print(lst)
-            item_set[lst[2][:-1]]={'Alias':lst[2][:-1].lower(),'Brand':lst[1],'Price':lst[3]}
-            # item_set[lst[2][:-1]]={'Brand':lst[1],'Price':lst[3]}
+            lst.append(lst[2].lower())
+            print(lst)
+            item_set[lst[5][:-1]]={'Brand':lst[1],'Price':lst[3],'OrigName':lst[2][:-1]}
     file.close
+    # for key, value in item_set.items():
+    #     print(key, value)
+    #     print('='*30)
     return item_set
 
 def parb_visas_atbildes(zinja):
@@ -41,13 +47,33 @@ def parb_visas_atbildes(zinja):
         augst_saraksts[bot_atbilde]=zinjojuma_varbutiba(zinja,vardu_saraksts,vienk_atbilde,prasitie_vardi)
     
     def get_price():
+        global items_prices,priceListExtracted
         items_prices=extract_prices()
-        for item in zinja:
-            if item in items_prices:
-                price=items_prices[item]['Price']
-                item_name=item
+        priceListExtracted=True
+        response=find_price(userInput,items_prices)
+        # print(zinja)
+        return response
+    
+    def find_price(zinja,items_prices):
+        print(zinja)
+        for item in items_prices:
+            if item in zinja:
+                items_prices.index(item)
+                key = items_prices[0]
+                price=items_prices[key]['Price']
+                item_name=items_prices[key]['OrigName']
                 response = f'{item_name} maksā: {price}'
                 return response
+            else:
+                return 'Nekas nav atrasts!'        
+        # for item in zinja:
+        #     if item in items_prices:
+        #         price=items_prices[item]['Price']
+        #         item_name=items_prices[item]['OrigName']
+        #         response = f'{item_name} maksā: {price}'
+        #         return response
+        #     else:
+        #         return 
 
     # atbildes
     ATBILDE('Labdien!',['sveiki','sveiks','čau','labdien'] ,vienk_atbilde=True)
@@ -66,13 +92,15 @@ def parb_visas_atbildes(zinja):
     # print('='*30)
 
     if atbilst =='_item_price':
-        atbilst=get_price()
+        if not priceListExtracted: atbilst=get_price()
         return atbilst
 
     return gara.nezina() if augst_saraksts[atbilst]<1 else atbilst
 
 
 def panemt_zinju(lietotajs_ievada):
+    global userInput
+    userInput=lietotajs_ievada
     sadala_zinju=re.split(r'\s+|[,;!.-]\s*',lietotajs_ievada.lower().replace('?',' ?'))
     atbilde=parb_visas_atbildes(sadala_zinju)
     return atbilde    
