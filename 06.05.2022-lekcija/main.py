@@ -64,14 +64,6 @@ def parb_visas_atbildes(zinja):
                 response = f'{item_name} maksā: {price}'
                 return response
         return 'Nekas nav atrasts!'        
-        # for item in zinja:
-        #     if item in items_prices:
-        #         price=items_prices[item]['Price']
-        #         item_name=items_prices[item]['OrigName']
-        #         response = f'{item_name} maksā: {price}'
-        #         return response
-        #     else:
-        #         return 
 
     # atbildes
     ATBILDE('Labdien!',['sveiki','sveiks','čau','labdien'] ,vienk_atbilde=True)
