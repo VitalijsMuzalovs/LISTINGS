@@ -23,14 +23,15 @@ def zinjojuma_varbutiba(lieto_zinja,atpazitie_vardi,vienk_atbilde=False,prasitie
         return 0
 def extract_prices():
     item_set={}
-    with open(r'H:\PYTHON\LISTINGS\29.04.2022-lekcija\RDveikals-Fridges\Fridges.txt','r') as file:
+    with open(r'E:\PYTHON\LISTINGS\29.04.2022-lekcija\RDveikals-Fridges\Fridges.txt','r') as file:
         for line in file:
             line=line.split(' ')
             lst=[el for el in line if el]
-            print(lst)
+            # print(lst)
             lst.append(lst[2].lower())
-            print(lst)
+            # print(lst)
             item_set[lst[5][:-1]]={'Brand':lst[1],'Price':lst[3],'OrigName':lst[2][:-1]}
+            # print(item_set[lst[5][:-1]])
     file.close
     # for key, value in item_set.items():
     #     print(key, value)
@@ -50,22 +51,19 @@ def parb_visas_atbildes(zinja):
         global items_prices,priceListExtracted
         items_prices=extract_prices()
         priceListExtracted=True
-        response=find_price(userInput,items_prices)
+        response=find_price(sadala_zinju,items_prices)
         # print(zinja)
         return response
     
     def find_price(zinja,items_prices):
         print(zinja)
-        for item in items_prices:
-            if item in zinja:
-                items_prices.index(item)
-                key = items_prices[0]
-                price=items_prices[key]['Price']
-                item_name=items_prices[key]['OrigName']
+        for item in zinja:
+            if item in items_prices:
+                price=items_prices[item]['Price']
+                item_name=items_prices[item]['OrigName']
                 response = f'{item_name} maksā: {price}'
                 return response
-            else:
-                return 'Nekas nav atrasts!'        
+        return 'Nekas nav atrasts!'        
         # for item in zinja:
         #     if item in items_prices:
         #         price=items_prices[item]['Price']
@@ -99,7 +97,7 @@ def parb_visas_atbildes(zinja):
 
 
 def panemt_zinju(lietotajs_ievada):
-    global userInput
+    global sadala_zinju
     userInput=lietotajs_ievada
     sadala_zinju=re.split(r'\s+|[,;!.-]\s*',lietotajs_ievada.lower().replace('?',' ?'))
     atbilde=parb_visas_atbildes(sadala_zinju)
