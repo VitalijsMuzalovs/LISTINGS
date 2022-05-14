@@ -47,7 +47,7 @@ outputToFile=sorted(outputToFile,key=itemgetter(0,2),reverse=True)
 BrandMaxLen=fieldMaxLen(0)
 NameMaxLen=fieldMaxLen(1)
 
-with open(fr'E:\TEHNIKUMS\Python\29.04.2022-lekcija\RDveikals-Fridges\Fridges.txt', 'w') as f:
+with open(fr'2022.04.22-RD_parser\RDveikals-Fridges\Fridges.txt', 'w') as f:
     for num,line in enumerate(outputToFile):
         f.write(str(num+1)+'.'+' '*(5-len(str(num+1)))+line[0]+' '*(BrandMaxLen+2-len(line[0])) + line[1]+':'+' '*(NameMaxLen+2-len(line[1]))+str(line[2])+' €'+'\n')
     f.close
