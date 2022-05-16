@@ -1,13 +1,6 @@
-item_set={}
-
-with open(r'H:\PYTHON\LISTINGS\29.04.2022-lekcija\RDveikals-Fridges\Fridges.txt','r') as file:
-    for line in file:
-        line=line.split(' ')
-        lst=[el for el in line if el]
-        item_set[lst[2][:-1]]={'Brand':lst[1],'Price':lst[3]}
-file.close
-
-# for k,v in item_set.items():
-#     print(k,v)
-
-# print(item_set['RDB424E1AX']['Price'])
+a={}
+a['1']={'brand':'Samsung','price':200.21}
+a['2']={'brand':'LG','price':221.31}
+n=str(3)
+if n in a:
+    print('OK')

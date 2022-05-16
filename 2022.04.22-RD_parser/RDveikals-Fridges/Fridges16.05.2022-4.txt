@@ -1,0 +1,357 @@
+1.    Whirlpool         WQ9I FO1BX:                 2239.99 €
+2.    Whirlpool         WQ9 M2L:                    1849.99 €
+3.    Whirlpool         WQ9 U2L:                    1449.99 €
+4.    Whirlpool         WQ9 U1L:                    1369.99 €
+5.    Whirlpool         WQ9 E1L:                    1286.22 €
+6.    Whirlpool         W9 931D B H:                740.99 €
+7.    Whirlpool         W4D7 BC2:                   739.99 €
+8.    Whirlpool         W4D7 XC2:                   739.99 €
+9.    Whirlpool         W9 931D IX H:               722.99 €
+10.   Whirlpool         W9 931D KS H:               661.98 €
+11.   Whirlpool         WB70E 972 X:                631.38 €
+12.   Whirlpool         W9 921D OX 2:               539.58 €
+13.   Whirlpool         W7 931A OX:                 503.88 €
+14.   Whirlpool         SW8 AM2Y XR 2:              492.66 €
+15.   Whirlpool         W7 921O OX H:               469.99 €
+16.   Whirlpool         W7 921I OX:                 467.68 €
+17.   Whirlpool         SW8 AM2Y WR 2:              461.99 €
+18.   Whirlpool         W7 921O OX:                 459.99 €
+19.   Whirlpool         W7 821O OX:                 451.99 €
+20.   Whirlpool         W5 821E W 2:                430.99 €
+21.   Whirlpool         W7 821O K:                  419.99 €
+22.   Whirlpool         W7 821O OX H:               414.45 €
+23.   Whirlpool         W5 911E OX 1:               407.08 €
+24.   Whirlpool         W5 921E OX 2:               406.98 €
+25.   Whirlpool         W7 821O W:                  399.99 €
+26.   Whirlpool         W5 821E OX 2:               385.99 €
+27.   Whirlpool         W7 811I K:                  379.99 €
+28.   Whirlpool         W5 721E W 2:                365.57 €
+29.   Whirlpool         W5 721E OX 2:               365.52 €
+30.   Whirlpool         W5 911E W 1:                359.58 €
+31.   Whirlpool         W5 711E OX 1:               349.99 €
+32.   Whirlpool         W5 811E W 1:                337.99 €
+33.   Whirlpool         W5 811E OX 1:               335.58 €
+34.   Whirlpool         W5 711E W 1:                299.99 €
+35.   Whirlpool         W55TM 4110 W 1:             244.7 €
+36.   Whirlpool         W55VM 1110 W 1:             208.08 €
+37.   Sharp             SJBA05DMXBE EU:             409.99 €
+38.   Sharp             SJBA05DMXWF EU:             379.99 €
+39.   Sharp             SJBA05DTXWFEU:              342.99 €
+40.   Sharp             SJBA05DTXSFEU:              340.99 €
+41.   Sharp             SJBB04DTXLFEU:              313.99 €
+42.   Sharp             SJBB04DTXLFEU (образец):    229.99 €
+43.   Severin           KGK 8956:                   889.07 €
+44.   Severin           KS 9878:                    563.33 €
+45.   Severin           KS 9788:                    461.85 €
+46.   Severin           KS 9957 Black:              439.99 €
+47.   Severin           KGK 8971:                   427.38 €
+48.   Severin           KS 9789:                    380.86 €
+49.   Severin           KS 8824:                    236.63 €
+50.   Severin           KS 8828:                    235.0 €
+51.   Severin           KB 8874:                    147.99 €
+52.   Samsung           RF65A967ESR/ EO:            2549.99 €
+53.   Samsung           RF23R62E3SR/ EO:            1727.85 €
+54.   Samsung           RS68A8540B1/ EF:            1048.56 €
+55.   Samsung           RS68A8830S9/ EF:            999.0 €
+56.   Samsung           RS68A8530S9/ EF:            997.56 €
+57.   Samsung           RS50N3413SA/ EO:            979.99 €
+58.   Samsung           RS68A8540B1/ EF (paraugs):  979.99 €
+59.   Samsung           RS67A8810S9/ EF:            891.48 €
+60.   Samsung           RS66A8100S9/ EF:            845.58 €
+61.   Samsung           RB38A7B6D41/ EF:            829.0 €
+62.   Samsung           RB38A7B5E48/ EF:            774.37 €
+63.   Samsung           RR39M7130S9/ EO:            699.99 €
+64.   Samsung           RB38A7B4EB1/ EF:            619.99 €
+65.   Samsung           RB38A6B3F22/ EF:            589.99 €
+66.   Samsung           RB38A7B5ECE/ EF:            580.38 €
+67.   Samsung           RB38A6B5ECL/ EF:            569.0 €
+68.   Samsung           RB38T671DSA/ EF:            539.99 €
+69.   Samsung           RB38A6B3ES9/ EF:            529.99 €
+70.   Samsung           RB34T675ESA/ EF:            529.99 €
+71.   Samsung           RB38A6B2F12/ EF:            515.05 €
+72.   Samsung           RB34T675EBN/ EF:            509.99 €
+73.   Samsung           RB34T632ESA/ EF:            509.99 €
+74.   Samsung           RB30J3215S9/ EO:            489.99 €
+75.   Samsung           RB33J3215WW/ EO:            480.99 €
+76.   Samsung           RB34T602FSA/ EF:            454.99 €
+77.   Samsung           RB34T671EWW/ EF:            449.99 €
+78.   Samsung           RB33J3205SA/ EO:            449.99 €
+79.   Samsung           RB34T672FEL/ EF:            449.0 €
+80.   Samsung           RB29HSR2DSA/ EO:            439.99 €
+81.   Samsung           RB34T600FSA/ EF:            429.99 €
+82.   Samsung           RB31FERNDEL/ EO:            429.99 €
+83.   Samsung           RB33J3000WW/ EO:            424.99 €
+84.   Samsung           RB30J3000WW/ EO:            409.99 €
+85.   Miele             KFN 16947 D ed/ cs:         3144.0 €
+86.   Miele             KFN 29683 D brws:           2249.0 €
+87.   Miele             KFN 29683 D obsw:           2214.0 €
+88.   Miele             KFN 29283 D bb:             1799.0 €
+89.   Miele             KFN 29283 D edst/ cs:       1709.99 €
+90.   Miele             KFN 29233 D ws:             1359.99 €
+91.   Miele             KFN 29162 D edt/ cs:        989.0 €
+92.   Miele             KFN 28132 D ws:             899.0 €
+93.   Miele             KFN 29162 D ws:             789.0 €
+94.   Midea             MRC518SFNX (HQ-627WEN):     964.99 €
+95.   Midea             MDRS710FGF02B (MRS518SNX):  842.41 €
+96.   Midea             MRS518SNGW (HC-689WEN):     685.63 €
+97.   Midea             MDRT294FGF01 (ST145):       251.99 €
+98.   Midea             MDRT294FGF02 (ST145 S):     244.79 €
+99.   Midea             MDRT294FGF01:               244.13 €
+100.  Midea             MDRD168FGF01 (MR1086W):     180.53 €
+101.  Midea             MDRD142FGF01 (MR1085W):     144.32 €
+102.  Midea             MDRD86FGF42V (HS-65LN):     128.99 €
+103.  Liebherr          CNgwd5723:                  1249.0 €
+104.  Liebherr          CBNsfd5223:                 1026.99 €
+105.  Liebherr          CN4835:                     1009.0 €
+106.  Liebherr          KB4330:                     1007.51 €
+107.  Liebherr          RBsfe5220:                  969.0 €
+108.  Liebherr          CNd5724:                    959.0 €
+109.  Liebherr          CBNd5223:                   939.0 €
+110.  Liebherr          RBe5220:                    929.0 €
+111.  Liebherr          Rsfe5220:                   859.0 €
+112.  Liebherr          CN4015:                     837.26 €
+113.  Liebherr          CNsfd5703:                  834.99 €
+114.  Liebherr          CNd5223:                    824.0 €
+115.  Liebherr          CNsfd5203:                  776.99 €
+116.  Liebherr          CNd5703:                    776.99 €
+117.  Liebherr          CNd5203:                    737.99 €
+118.  Liebherr          CNbef5723:                  724.0 €
+119.  Liebherr          CNfb4313:                   565.37 €
+120.  Liebherr          CUel2831:                   539.99 €
+121.  Liebherr          KSL2834:                    509.0 €
+122.  Liebherr          CU3331:                     492.95 €
+123.  Liebherr          CU2831:                     479.99 €
+124.  Liebherr          TPesf1710:                  474.0 €
+125.  Liebherr          K2834:                      449.0 €
+126.  Liebherr          CTel2931:                   444.0 €
+127.  Liebherr          K2340:                      439.99 €
+128.  Liebherr          CT2931:                     419.0 €
+129.  Liebherr          CTel2531:                   404.0 €
+130.  Liebherr          CTel2131:                   389.0 €
+131.  Liebherr          CT2131:                     329.0 €
+132.  Liebherr          TP1414:                     318.9 €
+133.  Liebherr          Tsl1414:                    313.81 €
+134.  Liebherr          T1414:                      309.99 €
+135.  Liebherr          TP1410:                     301.11 €
+136.  Liebherr          T1410:                      279.51 €
+137.  LG                GMX945MC9F:                 2430.05 €
+138.  LG                GMX844MC6F:                 2149.99 €
+139.  LG                GSXV91BSAE:                 1879.99 €
+140.  LG                GSXV91MCAE:                 1879.99 €
+141.  LG                GSXV90MCAE:                 1799.99 €
+142.  LG                GMQ844MC5E:                 1777.86 €
+143.  LG                GSJV91BSAE:                 1616.99 €
+144.  LG                GSJV91MCAE:                 1549.99 €
+145.  LG                GSJV90PZAE:                 1389.99 €
+146.  LG                GBB92MCACP:                 1022.04 €
+147.  LG                GSLV70PZTM:                 982.76 €
+148.  LG                GSLV50PZXM:                 982.76 €
+149.  LG                GSBV70PZTM:                 814.77 €
+150.  LG                GSBV70DSTM:                 804.78 €
+151.  LG                GBB71NSUGN:                 696.66 €
+152.  LG                GBB72MCUGN:                 686.83 €
+153.  LG                GBB72SAUGN:                 686.83 €
+154.  LG                GBB72SWVGN:                 640.75 €
+155.  LG                GBP62DSNFN:                 640.15 €
+156.  LG                GBB62PZFGN:                 636.48 €
+157.  LG                GBB72PZUFN:                 612.76 €
+158.  LG                GBB72PZEMN:                 610.98 €
+159.  LG                GBB72PZDMN:                 599.99 €
+160.  LG                GBB72SWDMN:                 580.38 €
+161.  LG                GBP32DSKZN:                 559.99 €
+162.  LG                GBB71PZDMN:                 549.99 €
+163.  LG                GBB72SADFN (образец):       549.99 €
+164.  LG                GBB71PZEMN:                 539.99 €
+165.  LG                GBB61PZJMN:                 499.18 €
+166.  LG                GBP31SWLZN:                 469.99 €
+167.  LG                GBB61SWJMN:                 457.98 €
+168.  LG                GBP31DSLZN:                 452.88 €
+169.  LG                GBB71PZEMN (образец):       449.99 €
+170.  Indesit           INFC8 TI21W:                418.19 €
+171.  Indesit           LI8 S2E W:                  402.89 €
+172.  Indesit           INFC8 TI21X:                399.99 €
+173.  Indesit           LI9 S2E X:                  396.78 €
+174.  Indesit           LI7 S2E S:                  394.99 €
+175.  Indesit           LI7 SN1E X:                 391.68 €
+176.  Indesit           LI7 SN1E W:                 381.48 €
+177.  Indesit           LI8 SN2E K:                 369.99 €
+178.  Indesit           LI9 S1E S:                  358.62 €
+179.  Indesit           LI9 S1E W:                  355.98 €
+180.  Indesit           LI8 S1E S:                  353.94 €
+181.  Indesit           LI7 S1E S:                  340.68 €
+182.  Indesit           LI6 S1E X:                  333.53 €
+183.  Indesit           LI7 S1E W:                  326.12 €
+184.  Indesit           LI8 S2E K:                  324.99 €
+185.  Indesit           SI6 1 S:                    324.99 €
+186.  Indesit           SI6 1 W:                    315.99 €
+187.  Indesit           LI8 S1E W:                  299.88 €
+188.  Indesit           LI6 S1E W:                  292.99 €
+189.  Indesit           LI6 S1E S:                  279.48 €
+190.  Indesit           RAA29 (образец):            179.99 €
+191.  Hotpoint-Ariston  E4D XC1:                    699.99 €
+192.  Hotpoint-Ariston  E4D B C1:                   646.68 €
+193.  Hotpoint-Ariston  HAFC9 TA33SX O3:            589.99 €
+194.  Hotpoint-Ariston  HAFC9 TT43SX O3:            560.99 €
+195.  Hotpoint-Ariston  HAFC9 TO32SK:               469.99 €
+196.  Hotpoint-Ariston  HAFC8 TO32SK:               459.99 €
+197.  Hotpoint-Ariston  HAFC8 TO32SK (образец):     429.99 €
+198.  Hisense           RS670N4GBE:                 1032.99 €
+199.  Hisense           RS677N4AWF:                 571.6 €
+200.  Hisense           RB390N4BFE:                 441.99 €
+201.  Hisense           RB390N4BC2:                 415.99 €
+202.  Hisense           RB390N4BW2:                 407.99 €
+203.  Hisense           RB390N4AC2:                 370.99 €
+204.  Hisense           RB372N4AC2:                 326.59 €
+205.  Hisense           RB343D4DDE:                 314.99 €
+206.  Hisense           RB291D4CDF:                 290.99 €
+207.  Hisense           RB291D4CWF:                 284.99 €
+208.  Hisense           RB224D4BWF:                 234.99 €
+209.  Hisense           RT267D4ADF:                 229.99 €
+210.  Hisense           RT267D4AWF:                 219.99 €
+211.  Hisense           RR154D4AW2:                 192.99 €
+212.  Hisense           RR121D4AWF:                 148.99 €
+213.  Hisense           RR55D4AW1:                  99.99 €
+214.  Gorenje           ORB153C:                    929.99 €
+215.  Gorenje           ORB153R:                    914.99 €
+216.  Gorenje           NRK6202CLI:                 757.85 €
+217.  Gorenje           NRK6202AC4:                 581.99 €
+218.  Gorenje           NRK6201SYW:                 546.99 €
+219.  Gorenje           NRK619EABXL4 (образец):     539.99 €
+220.  Gorenje           NRK619EABXL4:               530.4 €
+221.  Gorenje           NRK6202AXL4:                502.85 €
+222.  Gorenje           NRK6192AW4:                 498.78 €
+223.  Gorenje           NRK6192AXL4:                488.58 €
+224.  Gorenje           NRK6202AW4:                 478.38 €
+225.  Gorenje           R6192DW:                    423.91 €
+226.  Gorenje           NRK6191ES4:                 415.75 €
+227.  Gorenje           R6191DW:                    392.54 €
+228.  Gorenje           NRK4181CS4:                 387.49 €
+229.  Gorenje           NRK6191EW4:                 379.94 €
+230.  Gorenje           NRK4181CW4:                 376.99 €
+231.  Gorenje           RK6191EW4:                  358.45 €
+232.  Gorenje           RK4181PS4:                  342.99 €
+233.  Gorenje           RK4161PW4:                  315.99 €
+234.  Gorenje           RK4181PW4:                  292.99 €
+235.  Gorenje           RF4141PS4:                  265.99 €
+236.  Gorenje           RF4141PW4:                  231.73 €
+237.  Gorenje           R491PW:                     196.99 €
+238.  Electrolux        LNT7ME34G1:                 814.98 €
+239.  Electrolux        LNT7ME34K1:                 794.58 €
+240.  Electrolux        LNT7ME32M1:                 790.5 €
+241.  Electrolux        LNT7ME34X2:                 712.98 €
+242.  Electrolux        LRC5ME38X2:                 646.68 €
+243.  Electrolux        LNC7ME32X2:                 644.12 €
+244.  Electrolux        LNC7ME32W2:                 593.22 €
+245.  Electrolux        LRS2DF39W:                  590.58 €
+246.  Electrolux        LRT5MF38U0:                 586.5 €
+247.  Electrolux        LRS2DF39X:                  559.98 €
+248.  Electrolux        LRB2DF32X:                  494.99 €
+249.  Electrolux        LNT3LE31X1:                 441.66 €
+250.  Electrolux        LNT3LE34X4:                 422.28 €
+251.  Electrolux        LNT3LE34W4:                 396.5 €
+252.  Electrolux        LTB1AE28W0:                 386.58 €
+253.  Electrolux        LTB1AF28U0:                 381.48 €
+254.  Electrolux        LTB1AE24W0:                 380.46 €
+255.  Electrolux        LNT3LE31W1:                 377.4 €
+256.  Electrolux        LTB1AE24U0:                 343.95 €
+257.  Electrolux        LTB1AF28W0:                 331.5 €
+258.  Electrolux        LTB1AF24U0:                 319.99 €
+259.  Electrolux        LRB1AF23W:                  303.96 €
+260.  Electrolux        LTB1AF24W0:                 302.99 €
+261.  Electrolux        LTB1AF14W0:                 300.9 €
+262.  Electrolux        LTB1AF24U0 (образец):       269.99 €
+263.  Electrolux        LXB1SF11W0:                 261.99 €
+264.  Electrolux        LXB1SE11W0:                 253.98 €
+265.  Electrolux        LXB1AE13W0:                 253.98 €
+266.  Candy             CHDS 412FW:                 238.99 €
+267.  Candy             CCTOS542XHN:                217.99 €
+268.  Candy             CCTOS482WHN:                178.99 €
+269.  Bosch             KAG93AIEP:                  1751.99 €
+270.  Bosch             KAI93AIEP:                  1694.99 €
+271.  Bosch             KAN93VIFP:                  1448.99 €
+272.  Bosch             KGN49AIDP:                  1008.98 €
+273.  Bosch             KSF36PIDP:                  952.99 €
+274.  Bosch             KSF36PWDP:                  907.99 €
+275.  Bosch             KSV36AIDP:                  807.99 €
+276.  Bosch             KSV36AIEP:                  759.99 €
+277.  Bosch             KSV36VBEP:                  709.91 €
+278.  Bosch             KSV36AWEP:                  681.96 €
+279.  Bosch             KSV36VLDP:                  679.99 €
+280.  Bosch             KSV36VIEP:                  648.99 €
+281.  Bosch             KSV36VWEP:                  611.99 €
+282.  Bosch             KSV36NWEP:                  593.99 €
+283.  Bosch             KSV33NWEP:                  584.99 €
+284.  Bosch             KGN36MLEA:                  549.78 €
+285.  Bosch             KSV29NWEP:                  547.99 €
+286.  Bosch             KGV36VBEAS:                 492.66 €
+287.  Bosch             KGN33NLEB:                  467.97 €
+288.  Bosch             KGV366WEP:                  464.99 €
+289.  Bosch             KGV36VLEAS:                 457.99 €
+290.  Bosch             KGV36VIEAS:                 457.98 €
+291.  Bosch             KGN36NLEB:                  457.38 €
+292.  Bosch             KGV39VIEA:                  456.96 €
+293.  Bosch             KGN36NWEA:                  454.99 €
+294.  Bosch             KGV392LEA:                  434.51 €
+295.  Bosch             KGV33VWEA:                  426.99 €
+296.  Bosch             KGN33NWEB:                  414.94 €
+297.  Bosch             KGV39VWEA:                  406.98 €
+298.  Bosch             KGV36VWEA:                  390.66 €
+299.  Bosch             KGV362WEAS:                 390.66 €
+300.  Bosch             KGV332LEA:                  385.56 €
+301.  Bosch             KTL15NWFA:                  272.99 €
+302.  Bosch             KTR15NWFA:                  231.64 €
+303.  Berk              BSB1797D NF X:              782.99 €
+304.  Berk              BK689SAS:                   631.99 €
+305.  Berk              BK147SAW:                   185.12 €
+306.  Berk              BK130SAW:                   177.28 €
+307.  Berk              BFT855W White:              113.99 €
+308.  Berk              BRT855W:                    84.99 €
+309.  Beko              GN1416231JXN:               1201.75 €
+310.  Beko              GN163140ZGBN:               912.9 €
+311.  Beko              GNO4031GS:                  817.99 €
+312.  Beko              GNO5231XPN:                 786.99 €
+313.  Beko              RCNE560E40ZLXPHUN:          777.99 €
+314.  Beko              GN163130SN:                 767.04 €
+315.  Beko              GNO4331XPN:                 765.99 €
+316.  Beko              RCHE390K30XPN:              474.99 €
+317.  Beko              RCNA406E40ZXBN:             469.2 €
+318.  Beko              RCNA366I40ZXBN:             441.66 €
+319.  Beko              RCNA366I60XBN:              431.09 €
+320.  Beko              RCNA366I40WN:               412.99 €
+321.  Beko              RCSA406K40XBN:              399.99 €
+322.  Beko              MCNA366I40WN:               397.57 €
+323.  Beko              RCNA366K34XBN:              383.71 €
+324.  Beko              MCNA366I40XBN:              379.99 €
+325.  Beko              RCNA406I40WN:               375.45 €
+326.  Beko              RCSA366K40WN:               358.02 €
+327.  Beko              CNA340I30WN:                353.99 €
+328.  Beko              RCSA366K40XBN:              349.99 €
+329.  Beko              CNA340I30XPN:               331.29 €
+330.  Beko              CSA240K31SN:                311.09 €
+331.  Beko              RCSA300K30SN:               299.99 €
+332.  Beko              RCSA330K30XPN:              285.86 €
+333.  Beko              RCSA330K30WN:               280.59 €
+334.  Beko              CSA270K30XPN:               278.22 €
+335.  Beko              RCSA300K30WN:               269.99 €
+336.  Beko              RSSA290M31WN:               269.99 €
+337.  Beko              CSA270M31WN:                266.21 €
+338.  Beko              CSA240K30SN:                265.19 €
+339.  Beko              RDSK240K30SN:               259.99 €
+340.  Beko              RDSA240K30WN:               249.99 €
+341.  Beko              RCSA210K30WN:               239.99 €
+342.  Beko              RDSA240K30XPN:              239.99 €
+343.  Beko              RCSA240K30WN:               235.52 €
+344.  Beko              TSE1234FSN:                 229.99 €
+345.  Beko              RDSA180K30WN:               229.99 €
+346.  Beko              TSE1284N:                   188.28 €
+347.  Beko              TSE1423N:                   182.06 €
+348.  Beko              TS190330N:                  172.99 €
+349.  Beko              RSO45SEU:                   114.99 €
+350.  Beko              RSO44WEUN:                  105.99 €
+351.  AEG               RMB76121NX:                 1834.98 €
+352.  AEG               RMB86321NX:                 1486.99 €
+353.  AEG               RCB732E5MB:                 743.58 €
+354.  AEG               RCB736E5MB:                 715.61 €
+355.  AEG               RCB736E5MX:                 687.38 €
+356.  AEG               RDB428E1AX:                 392.7 €
+357.  AEG               RDB424E1AX:                 386.58 €

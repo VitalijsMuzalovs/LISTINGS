@@ -1,7 +1,10 @@
+from os import listdir
+from os.path import isfile, join
 import numpy as np
 import matplotlib.pyplot as plt
 
 fileDir="2022.04.22-RD_parser\RDveikals-Fridges\Fridges_REF.txt" #REFERENCE FILE
+mypath='2022.04.22-RD_parser\RDveikals-Fridges'
 
 brand=[]
 model=[]
@@ -23,31 +26,39 @@ def getRefLists(fileDir):
 model,brand,price=getRefLists(fileDir)
 for n in range(len(brand)):
     # print(f'{brand[n]} - {model[n]} - {price[n]}')
-    ref={model[n]:{'brand':brand[n],'price_ref':price[n]}}
-    print(ref)
+    ref[model[n]]={'brand':brand[n],'price_ref':price[n]}
+    # print(ref)
 
-fileDir="2022.04.22-RD_parser\RDveikals-Fridges\Fridges13.05.2022.txt"
-model,brand,price=getRefLists(fileDir)
-for n in model:
-    if n in ref:
-        ref[n]={'price_1':price[n]}
-        print(ref[n])
+onlyfiles = [f for f in listdir(mypath)]
+myFileList=[]
+for file in onlyfiles:
+    if file[-4:]=='.txt' and file[:-4].split('-')[-1].isdigit():
+        myFileList.append(mypath+'\\'+file)
 
-# for key, value in ref.items():
-#     print(key, value)
-#     print('='*30)
+# print(myFileList)
 
-# print(ref['CU3331'])
+key_nr=1
 
-# fig, ax = plt.subplots()
-# for color in ['tab:blue', 'tab:orange', 'tab:green']:
-#     n = 750
-#     x, y = np.random.rand(2, n)
-#     scale = 200.0 * np.random.rand(n)
-#     ax.scatter(x, y, c=color, s=scale, label=color,
-#                alpha=0.3, edgecolors='none')
+for dir in myFileList:
+    price_nr = 'price_'+str(key_nr)
+    model,brand,price=getRefLists(dir)
+    for num,n in enumerate(model):
+        if n in ref:
+            ref[n][price_nr]=price[num]
+    key_nr+=1
 
-# ax.legend()
-# ax.grid(True)
+movablePrice={}
+movableBrandSet=set()
+for el in ref:
+    if ref[el]['price_1']!=ref[el]['price_4']: 
+        movablePrice[el]=ref[el]
+        # print(ref[el]['brand'])
+        movableBrandSet.add(str(ref[el]['brand']))
+        
 
-# plt.show()
+print(len(movableBrandSet))
+# for k in movableBrandSet:
+#     print(ref.keys(k))
+for n,(key, value) in enumerate(movablePrice.items()):
+    print(n,key, value)
+print('='*30)
