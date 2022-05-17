@@ -1,6 +1,3 @@
-a={}
-a['1']={'brand':'Samsung','price':200.21}
-a['2']={'brand':'LG','price':221.31}
-n=str(3)
-if n in a:
-    print('OK')
+a=[]
+a= [x+5 for x in range(0,5)]
+print(a)

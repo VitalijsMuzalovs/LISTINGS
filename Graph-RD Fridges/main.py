@@ -56,9 +56,56 @@ for el in ref:
         movableBrandSet.add(str(ref[el]['brand']))
         
 
-print(len(movableBrandSet))
-# for k in movableBrandSet:
-#     print(ref.keys(k))
-for n,(key, value) in enumerate(movablePrice.items()):
-    print(n,key, value)
-print('='*30)
+# print(movableBrandSet)
+all_Lists=[]
+
+for b_num,brand in enumerate(movableBrandSet):
+    globals()['%s' % brand+'_List']=[]
+    # print(['%s' % brand+'_List'])
+    for pos in movablePrice:
+        if brand in movablePrice[pos]['brand']:
+            globals()['%s' % brand+'_List'].append([pos,movablePrice[pos]['price_ref'],movablePrice[pos]['price_1'],movablePrice[pos]['price_2'],movablePrice[pos]['price_3'],movablePrice[pos]['price_4'],movablePrice[pos]['price_5']])
+    # all_Lists.append(['%s' % brand+'_List'])
+    all_Lists.append(['%s' % brand+'_List'])
+
+
+
+# for n,(key, value) in enumerate(movablePrice.items()):
+#     print(n,key, value)
+# print('='*30)
+
+def plot(brand_List,brand_name):
+    plt.subplots(figsize=(15,6))
+    x=range(0,len(brand_List[0])-1)
+    plt.title(brand_name.split("'")[1].split("_")[0])
+    myNp=np.array(brand_List)
+    a=myNp[myNp[:, 1].argsort()]
+
+    for i in myNp:
+        # print(i)
+        z=i[1:]
+        y = [float(el) for el in z]
+        plt.plot(x,y,label=i[0])
+        
+    plt.legend()
+    plt.show()
+
+ok=True
+
+while ok:
+    print('='*30)
+    for num,lists in enumerate(all_Lists):
+        listName = str(lists).split("'")[1].split('_')[0]
+        
+        print(num,listName)
+    print('='*30)
+    brand_num = input('Please,select a brand number: ')
+    if brand_num=='stop': 
+        break
+    else:
+        brand_num=int(brand_num)
+        list_name = str(all_Lists[brand_num])
+        # print(f'You are selected {list_name}')
+        # print(all_Lists[brand_num])
+
+        plot(globals()['%s' % str(all_Lists[brand_num]).split("'")[1]],list_name)
