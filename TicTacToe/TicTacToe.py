@@ -1,4 +1,3 @@
-from importlib.machinery import WindowsRegistryFinder
 from tkinter import*
 from tkinter import messagebox
 

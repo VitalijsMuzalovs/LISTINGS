@@ -3,6 +3,7 @@ from os.path import isfile, join
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 fileDir="2022.04.22-RD_parser\RDveikals-Fridges\Fridges_REF.txt" #REFERENCE FILE
 mypath='2022.04.22-RD_parser\RDveikals-Fridges'
 
@@ -12,7 +13,7 @@ price=[]
 ref={}
 
 def getRefLists(fileDir):
-    with open(fileDir,'r') as file:
+    with open(fileDir,'r',errors='ignore') as file:
         for line in file:
             # print(line)
             tmp=line.split(' ')
