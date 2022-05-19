@@ -64,7 +64,7 @@ for b_num,brand in enumerate(movableBrandSet):
     # print(['%s' % brand+'_List'])
     for pos in movablePrice:
         if brand in movablePrice[pos]['brand']:
-            globals()['%s' % brand+'_List'].append([pos,movablePrice[pos]['price_ref'],movablePrice[pos]['price_1'],movablePrice[pos]['price_2'],movablePrice[pos]['price_3'],movablePrice[pos]['price_4'],movablePrice[pos]['price_5']])
+            globals()['%s' % brand+'_List'].append([pos,movablePrice[pos]['price_ref'],movablePrice[pos]['price_1'],movablePrice[pos]['price_2'],movablePrice[pos]['price_3'],movablePrice[pos]['price_4'],movablePrice[pos]['price_5'],movablePrice[pos]['price_6'],movablePrice[pos]['price_7']])
     # all_Lists.append(['%s' % brand+'_List'])
     all_Lists.append(['%s' % brand+'_List'])
 
@@ -93,12 +93,12 @@ def plot(brand_List,brand_name):
 ok=True
 
 while ok:
-    print('='*30)
+    print('='*35)
     for num,lists in enumerate(all_Lists):
         listName = str(lists).split("'")[1].split('_')[0]
         
         print(num,listName)
-    print('='*30)
+    print('='*35)
     brand_num = input('Please,select a brand number: ')
     if brand_num=='stop': 
         break
