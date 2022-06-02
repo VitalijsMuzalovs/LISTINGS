@@ -1,4 +1,4 @@
-from cProfile import label
+# from cProfile import label
 from tkinter import*
 
 def komanda():
@@ -22,6 +22,6 @@ fileMenu.add_command(label='New',command=komanda)
 fileMenu.add_command(label='Exit',command=win.quit)
 
 saraksts.add_cascade(label='Edit',menu=editMenu)
-editMenu.add_radiobutton('Lat')
+# editMenu.add_radiobutton('Lat')
 
 win.mainloop()
