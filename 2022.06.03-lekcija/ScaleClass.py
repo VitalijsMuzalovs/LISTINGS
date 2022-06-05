@@ -1,20 +1,23 @@
 import tkinter as tk
+from turtle import width
 
 # Slider
 
 class Otrs:
-    def __init__(self,master):
+    def __init__(self,win):
         self.master=win
         
         # Frame
-        self.frame=tk.Frame(self.master,width=300,height=300)
-        self.frame.pack()
+        self.frame=tk.Frame(self.master,width=300,height=300,bg='white')
+        self.frame.pack(fill='both')
         
+
         # create slider/scale
         self.scale=tk.Scale(self.frame,label="Skala!",from_=0,to=10,orient="horizontal",
                             showvalue=True,tickinterval=1,resolution=1,command=self.print,
-                            troughcolor='blue')
-        self.scale.place(x=30,y=30)
+                            troughcolor='blue',bg='grey',width=20,length=150)
+        self.scale.place(x=0,y=0)
+        print(self.scale.winfo)
 
         # create button
         self.bt = tk.Button(self.frame,text='Disable',command=self.cmdDisable)
@@ -27,7 +30,7 @@ class Otrs:
         self.scale.config(state='disabled',troughcolor='grey')
 
 win=tk.Tk()
-win.geometry("500x500")
+win.geometry("700x250")
 win.title("Mans logs")
 
 
