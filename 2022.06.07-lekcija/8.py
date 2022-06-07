@@ -35,7 +35,7 @@ class Person:
 
     def age(self):
         today=datetime.date.today()
-        age=today.year-self.birthdate.date.year
+        age=today.year-self.birthdate.year
         return age
 
 
