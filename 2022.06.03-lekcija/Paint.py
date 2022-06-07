@@ -30,7 +30,7 @@ class zimet(object):
     def chooseColor(self):
         self.active_button(self.chColorBt)
 
-    def active_button(self, ...):
+    def active_button(self,):
         pass
 
     def paint(self,event):

@@ -1,20 +1,34 @@
-from tkinter import Frame, Tk
+import tkinter as tk
+from tkinter import Button, ttk
 
-class MyApp():
-    def __init__(self):
-        self.root = Tk()
 
-        self.my_frame_red = Frame(self.root, bg='red',width=150)
-        self.my_frame_red.grid(row=0, column=0, sticky='nsew')
+def tirs():
+    saraksts.set('')
 
-        self.my_frame_blue = Frame(self.root, bg='blue',width=250)
-        self.my_frame_blue.grid(row=0, column=1, sticky='nsew')
+def funkcija(*arg):
+    ttk.Label(logs, text="index..."+str(saraksts.current())+"ir" +" "+str(n.get())).pack()
+    
+logs=tk.Tk()
+logs.title("Izkrītošais saraksts")
+logs.geometry('500x250')
 
-        self.root.grid_rowconfigure(0, minsize=20, weight=1)
-        self.root.grid_columnconfigure(0, minsize=20, weight=1)
-        self.root.grid_columnconfigure(1, weight=1)
+#ttk.Label(logs, text="Izvēlies mēnesi!", font=('Time New Roman', 10)).grid(column=0,
+#          row=0, padx=10, pady=25)
 
-        self.root.mainloop()
+banka=('Janvāris', 'Februāris', 'Marts',  'Aprīlis')
+# veidosim Combobox
+n=tk.StringVar()
+saraksts=ttk.Combobox(logs, width=27, textvariable=n)
+saraksts['value']=banka
+saraksts['state']="readonly"
+saraksts.pack(padx=5, pady=5)
 
-if __name__ == '__main__':
-    app = MyApp()
+poga=Button(logs, text='tīrīt', command=tirs)
+poga.pack()
+
+
+# izsekot mainīgo ....
+
+n.trace('w', funkcija)
+#banka.current()
+logs.mainloop()

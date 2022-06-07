@@ -8,14 +8,24 @@ def retrieve():
 def cmdClear():
     cmb.set('')
 
+
 def funkcija(*arg):
-    Label(root,text='index: ' + str(cmb.current()) + ' ir' + ' ' + str(n.get())).grid(row=4,column=2)
+    az=Label(root,text='index: ' + str(cmb.current()) + ' ir' + ' ' + str(n.get()))
+    lbList.append(az)
+    az.pack()
+    #print(lbList)
+
+def cmdDelete():
+    for i in lbList:
+        i.after(5, i.destroy())
 
 root = Tk()
 root.title('Combobox')
 root.geometry("300x300")
 
-label = Label(root,text = "Izvēlies mēnesi:").grid(row=1,column=1,padx=10,pady=25)  
+label = Label(root,text = "Izvēlies mēnesi:").pack()  
+
+lbList=[]
 
 n=StringVar()   
 
@@ -24,11 +34,17 @@ cmb['values'] = ('January', 'February', 'March',
                 'April','May','June',
                 'July','August','September',
                 'October','November','December')
-cmb.grid(row=1,column=2)
+cmb.pack()
  
 bttn = Button(root, text = "Tīrīt", command = cmdClear)
-bttn.grid(row=2,column=2)
+bttn.pack()
+
+btDel = Button(root, text = "DELETE", command = cmdDelete)
+btDel.pack()
+
 
 n.trace('w',funkcija)
+
+# cmb.bind('<<ComboboxSelected>>', funkcija)
     
 root.mainloop()  
