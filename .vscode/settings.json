@@ -1,0 +1,64 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "abul.db.elephantsql.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "ydgjjxnq",
+            "database": "ydgjjxnq",
+            "username": "ydgjjxnq",
+            "password": "eX31Oe7z_hx5ai_qWjuvQbIJodo1ARET"
+        },
+        {
+            "previewLimit": 50,
+            "server": "abul.db.elephantsql.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "ydgjjxnq",
+            "database": "ydgjjxnq",
+            "username": "ydgjjxnq",
+            "password": "eX31Oe7z_hx5ai_qWjuvQbIJodo1ARET"
+        },
+        {
+            "previewLimit": 50,
+            "server": "abul.db.elephantsql.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "password": "eX31Oe7z_hx5ai_qWjuvQbIJodo1ARET",
+            "name": "ydgjjxnq",
+            "database": "ydgjjxnq",
+            "username": "ydgjjxnq"
+        },
+        {
+            "previewLimit": 50,
+            "server": "abul.db.elephantsql.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "ydgjjxnq",
+            "database": "ydgjjxnq",
+            "username": "ydgjjxnq",
+            "password": "eX31Oe7z_hx5ai_qWjuvQbIJodo1ARET"
+        },
+        {
+            "previewLimit": 50,
+            "server": "abul.db.elephantsql.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "password": "eX31Oe7z_hx5ai_qWjuvQbIJodo1ARET",
+            "name": "ydgjjxnq",
+            "database": "ydgjjxnq",
+            "username": "ydgjjxnq"
+        },
+        {
+            "previewLimit": 50,
+            "server": "abul.db.elephantsql.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "ydgjjxnq",
+            "database": "ydgjjxnq",
+            "username": "ydgjjxnq",
+            "password": "eX31Oe7z_hx5ai_qWjuvQbIJodo1ARET"
+        }
+    ]
+}
