@@ -1,34 +1,53 @@
+# Gadu skaitītājs
+
+import datetime
 import tkinter as tk
-from tkinter import Button, ttk
 
 
-def tirs():
-    saraksts.set('')
 
-def funkcija(*arg):
-    ttk.Label(logs, text="index..."+str(saraksts.current())+"ir" +" "+str(n.get())).pack()
+Logs=tk.Tk()
+Logs.geometry("620x780")
+Logs.title(" Vecuma kalkulatos App ")
+name = tk.Label(text = "Vārds")
+name.grid(column=0,row=1)
+year = tk.Label(text = "Gads")
+year.grid(column=0,row=2)
+month = tk.Label(text = "Mēnesis")
+month.grid(column=0,row=3)
+date = tk.Label(text = "Diena")
+date.grid(column=0,row=4)
+nameEntry = tk.Entry()
+nameEntry.grid(column=1,row=1)
+yearEntry = tk.Entry()
+yearEntry.grid(column=1,row=2)
+monthEntry = tk.Entry()
+monthEntry.grid(column=1,row=3)
+dateEntry = tk.Entry()
+dateEntry.grid(column=1,row=4)
+def getInput():
+    name=nameEntry.get()
+    m = Person(name,datetime.date(int(yearEntry.get()),int(monthEntry.get()),int(dateEntry.get())))
     
-logs=tk.Tk()
-logs.title("Izkrītošais saraksts")
-logs.geometry('500x250')
-
-#ttk.Label(logs, text="Izvēlies mēnesi!", font=('Time New Roman', 10)).grid(column=0,
-#          row=0, padx=10, pady=25)
-
-banka=('Janvāris', 'Februāris', 'Marts',  'Aprīlis')
-# veidosim Combobox
-n=tk.StringVar()
-saraksts=ttk.Combobox(logs, width=27, textvariable=n)
-saraksts['value']=banka
-saraksts['state']="readonly"
-saraksts.pack(padx=5, pady=5)
-
-poga=Button(logs, text='tīrīt', command=tirs)
-poga.pack()
+    textArea =tk.Text(Logs,height=10,width=25)
+    textArea.grid(column=1,row=6)
+    answer = " Hei {m}!!!. Tev ir {age} gadi! ".format(m=name, age=m.age())
+    textArea.insert(tk.END,answer)
 
 
-# izsekot mainīgo ....
+button=tk.Button(Logs,text="Rēķināt",command=getInput,bg="pink")
+button.grid(column=1,row=5)
 
-n.trace('w', funkcija)
-#banka.current()
-logs.mainloop()
+
+
+
+
+class Person:
+    def __init__(self,name,birthdate):
+        self.name = name
+        self.birthdate = birthdate
+    def age(self):
+        today = datetime.date.today()
+        age = today.year-self.birthdate.year
+        return age
+
+Logs.mainloop()

@@ -18,7 +18,7 @@ class zimet(object):
         # Paint area
         self.c=Canvas(self.win,bg='white',width=500,height=500)
         self.c.grid(row=1,columnspan=5)
-
+        self.setup()
         self.win.mainloop()
 
 
@@ -30,7 +30,7 @@ class zimet(object):
     def chooseColor(self):
         self.ereaser_on=False
         self.color=askcolor(color=self.color)[1]
-        # self.active_button(self.chColorBt)
+        self.active_button(self.chColorBt)
 
     def setup(self):
         self.old_x=None
@@ -39,8 +39,8 @@ class zimet(object):
         self.color=self.DEFAULT_COLOR
         self.ereaser_on=False
         self.active_button=self.pen_poga
-        self.bind('<B1-Motion>',self.paint)
-        self.bind('<ButtonRelease-1>',self.reset)
+        self.c.bind('<B1-Motion>',self.paint)
+        self.c.bind('<ButtonRelease-1>',self.reset)
 
     def active_button(self):
         pass
