@@ -33,7 +33,7 @@ groove_step=0.1
 panel_1=1280
 panel_2=1180
 
-side_tolerance=2
+side_tolerance=0.6
 
 print('-'*40)
 print(f'Панели: {panel_1} ; {panel_2}')
@@ -44,12 +44,16 @@ print('-'*80)
 print(f'Канавка \t  Между канавок  \t  Крайние канавки  \t  Кол-во')
 print('-'*80)
 
+
+count = 0 
 for i in np.arange(groove_min,groove_max,groove_step):
     for k in np.arange(hill_min,hill_max,hill_step):
 
         side_1=sides(panel_1,i,k)
         side_2=sides(panel_2,i,k)
 
-        if not(side_1 is None) and not(side_2 is None) and abs(side_1-side_2)<=side_tolerance and side_1>i/2:
-            # print(f'Канавка: {round(i)}  Между канавок: {round(k,2)} Остается по краям: {round(side_1,2)}/{round(side_2,2)} Кол-во: {leftover(panel_1,i,k)}')
-            print(f'{round(i)}  \t\t {round(k,2)} \t\t\t {round(side_1,2)} / {round(side_2,2)} \t\t {leftover(panel_1,i,k)}')
+        if not(side_1 is None) and not(side_2 is None) and abs(side_1-side_2)<=side_tolerance and (side_1>i/2 or side_2>i/2):
+            print(f'{round(i,2)}  \t\t {round(k,2)} \t\t\t {round(side_1,2)} / {round(side_2,2)} \t\t {leftover(panel_1,i,k)}')
+            count+=1
+
+print(f'Всего: {count}')
