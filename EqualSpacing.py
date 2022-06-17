@@ -30,10 +30,10 @@ hill_step=0.1
 groove_min=6
 groove_max=25
 groove_step=0.1
-panel_1=1280
-panel_2=1180
+panel_1=340
+panel_2=500
 
-side_tolerance=0.6
+side_tolerance=2
 
 print('-'*40)
 print(f'Панели: {panel_1} ; {panel_2}')
