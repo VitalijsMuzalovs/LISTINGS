@@ -3,14 +3,13 @@ def collatz(n):
     lst = []
     while n>1:
         lst.append(n)
-        print(n,type(n))
+        # print(n,type(n))
         if n%2 == 0: 
             n=int(n//2)
         else:
             n=int(n*3+1)
         if n==1: 
             lst.append(n)
-            print(n)
     print(len(lst))
     return len(lst)
 
