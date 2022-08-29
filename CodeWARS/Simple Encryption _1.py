@@ -27,7 +27,6 @@ def decrypt(encrypted_text, n):
     # return print(' -> '.join(lst))
     return print(encrypted_text)
 
-
 def encrypt(text, n):
     if text is None or n<1: return text
     lst = []
@@ -47,12 +46,12 @@ def enc(text):
 def decr(text):
     even = ''.join((x for x in text[0:len(text)//2]))
     odd = ''.join((x for x in text[len(text)//2:]))
-    if len(text)%2 != 0: 
-        even = ' ' + even
-        rez =  list(zip(odd,even))
-        rez.reverse()
-    else:
-        rez =  list(zip(even,odd))
+    rez =  list(zip(odd,even))
+    if len(text)%2 != 0:
+        if len(even)>len(odd): 
+            rez.append(even[-1])
+        else:
+            rez.append(odd[-1])
     output=''
     for i in rez:
         output += ''.join(i)
@@ -61,4 +60,4 @@ def decr(text):
 # encrypt("This is a test!", 1)
 # decrypt("hskt svr neetn!Ti aai eyitrsig", 1)
 decrypt("This is a test!", 4)
-
+decrypt(" Tah itse sits!", 3)
