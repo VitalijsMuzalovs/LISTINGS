@@ -10,18 +10,23 @@ class Shop:
     
     def addDept(self,deptName):
         self.deptList.append(deptName)
-    
-    def showDepts(self,deptList):
-        return print(k.name for k in self.deptList)
-
+        
+    def showDepts(self):
+        print('\"',self.name,'\"'," departments:")
+        if len(self.deptList)>0:
+            for el in self.deptList:
+                print(el )
+        else:
+            print("No departments")
+            
     def __str__(self):
-        return f"""My shop name: {self.name}\tShop size: {self.size}\tAddress: {self.address}\nDepartments
----------------\n{self.showDepts}"""
+        return f"""My shop name: {self.name}\tShop size: {self.size}\tAddress: {self.address}\nDepartments"""
+# ---------------\n{self.showDepts}"""
 
 
-class Department(Shop):
-    def __init__(self,name):
-        self.name = name
+class Department():
+    def __init__(self,depName):
+        self.name = depName
 
 
 if __name__ == "__main__":
@@ -31,7 +36,10 @@ if __name__ == "__main__":
     deptFish = Department("Fish")
     deptVegetables = Department("Vegetables")
 
-    rimi.addDept(deptBread)
-    rimi.addDept(deptFish)
-    print(rimi)
+    rimi.addDept(deptBread.name)
+    rimi.addDept(deptFish.name)
+    rimi.showDepts()
+
     print(maxima)
+    maxima.showDepts()
+
