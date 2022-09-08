@@ -10,7 +10,10 @@ only contains alphanumeric characters (note that '_' is not alphanumeric)
 import re
 
 def out(txt):
-    return re.match(r"[\da-zA-Z]{6}",txt)
+    # return re.findall("[0-9a-zA-Z]{1}",txt) and re.search("[.]{6}",txt)
+    # return re.match("[0-9a-zA-Z]{6}",txt) and re.findall("[0-9a-zA-Z]{1}",txt)
+    return re.match("([0-9a-zA-Z]{6})([0-9a-zA-Z]{1})",txt) 
+    # return re.findall("alnum:",txt)
 
 print(out('fjd3IR9'))
-print(out('123abc'))
+print(out('a123456;89'))
